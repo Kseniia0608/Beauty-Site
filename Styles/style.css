@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fs-ft: 12px;
+    --fs-normal: 16px;
+    --fs-sm: 14px;
+    --fs-h1: 48px;
+    --fs-h3: 24px;
+    --fs-h4: 21px;
+    --fs-h5: 18px;
+    --fs-h6: 16px;
+
+    /*color palette*/
+    --grey: #EEEFF1;
+    --white: #FFFFFF;
+    --pink: #f13c6e;
+    --dark: #33333;
+    --blue: blue;
+    --black: black;
+    --indigo: #EFEFEF;
+    --grey-82: #828282;
+    /*container sizes*/
+    --container-width: 1110px;
+    --container-space: 100px;
+}
+
+.container {
+    max-width: calc(var(--container-width) + var(--container-space) * 2);
+    padding: 0 var(--container-space);
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: var(--white);
+    font-family: sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-container-center-stretch {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/*header*/
+.header {
+    background-color: var(--white);
+}
+
+/*top*/
+.header__nav-top-links {
+    background-color: var(--grey);
+    gap: 20px;
+}
+
+.header__nav-top-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-normal);
+    line-height: 17px;
+    display: inline-block;
+    color: var(--dark);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    border-bottom-color: transparent;
+    transition: border color var(--blue);
+
+}
+
+.header__nav-top-link:hover {
+    border-bottom-color: var(--blue);
+}
+
+/*middle*/
+.header__middle {
+    padding: 41px 0 30px;
+}
+
+.header__middle-wrap {
+    gap: 40px;
+}
+
+.header__middle-logo-wrap {
+    gap: 10px;
+}
+
+.header__middle-call {
+    gap: 40px;
+}
+
+/*typography*/
+.txt {
+    font-weight: 400;
+    font-size: var(--fs-normal);
+    line-height: 18.75px;
+    color: var(--black);
+}
+
+/*buttons*/
+.btn {
+    border: none;
+    background-color: transparent;
+    font-weight: 400;
+    border-radius: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all var(--blue);
+    padding: 2px 20px;
+}
+
+.btn--border {
+    border: 2px solid var(--pink);
+    color: var(--black);
+}
+
+.logo {
+    max-width: 258px;
+    width: 100%;
+}
+
+.br-border-bottom {
+    border: 1px solid var(--indigo);
+}
+
+/*bottom*/
+.header {
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+}
+
+.header__nav-bottom {
+    padding: 30px 0;
+}
+
+.header__nav-bottom-links {
+    gap: 40px;
+}
+
+.header__nav-bottom-link {
+    font-weight: 400;
+    font-size: var(--fs-normal);
+    line-height: 18.75px;
+    color: var(--black);
+    border-bottom-color: transparent;
+    transition: border color var(--blue);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+
+}
+
+.header__nav-bottom-link:hover {
+    border-bottom-color: var(--blue);
+}
+
+/*main*/
+.main {
+    min-height: calc(100vh-200px);
+    display: flex;
+    align-items: center;
+    background-image: url(../Imgs/Chear.png);
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+    padding-top: 30px;
+}
+
+
+.main__content {
+
+    max-width: 308px;
+}
+
+.main__title {
+    padding-bottom: 50px;
+}
+
+.main__txt {
+    padding-bottom: 50px;
+}
+
+.h1 {
+    font-weight: 700;
+    font-size: var(--fs-h1);
+}
+
+.txt-sm {
+    font-weight: 400;
+    font-size: var(--fs-sm);
+    line-height: 20px;
+}
+
+.button {
+    padding: 2px 20px;
+    font-weight: 400;
+    border-radius: 40px;
+    line-height: 40px;
+    font-size: var(--fs-sm);
+    color: var(--white);
+    border: none;
+}
+
+.main__btn {
+    background: var(--pink);
+    border: 2px solid var(--white);
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.section-first {
+    padding: 80px 0 100px;
+    background-color: var(--grey);
+}
+
+.section-first__title {
+    padding-bottom: 38px;
+}
+
+.card-price {
+    max-width: 195px;
+    min-width: 100px;
+    width: 100%;
+    background-color: var(--white);
+    padding: 20x 20px 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-wrap {
+    gap: 30px;
+    padding-bottom: 100px;
+}
+
+.card-price__img {
+    padding-bottom: 20px;
+}
+
+.card-price__txt,
+.card-price__count {
+    padding-bottom: 20px;
+}
+
+.h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--fs-h3);
+    line-height: 28.13px;
+}
+
+.h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--fs-h4);
+    line-height: 24.61px;
+}
+
+.txt--center {
+    text-align: center;
+}
+
+.btn--md {
+
+    font-weight: 400;
+    line-height: 40px;
+    font-size: var(--fs-sm);
+    color: var(--white);
+    background: var(--pink);
+    border: 2px solid var(--white);
+    cursor: pointer;
+    padding: 0.5px 30px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+
+/*card discription*/
+
+
+.card-discription {
+    width: calc(50% - 15px);
+    min-width: 200px;
+    background-color: var(--pink);
+    padding: 30px 40px;
+
+}
+
+.card-discription__col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.card-discription__img {
+    max-width: 140px;
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+
+.input {
+    border-radius: 30px;
+    background-color: var(--white);
+    max-width: 225px;
+    border: none;
+    padding: 9px 0 9px 25px;
+    font-weight: 400;
+    font-size: var(--fs-sm);
+    line-height: 16.41px;
+    color: var(--grey);
+}
+
+.input::placeholder {
+    color: var(--grey);
+}
+
+.h5 {
+    font-weight: 700;
+    font-size: var(--fs-h5);
+    line-height: 21px;
+}
+
+.txt-sm {
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--fs-sm);
+}
+
+.txt--white {
+    color: var(--white);
+}
+
+.btn--card {
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn--card:hover {
+    background: var(--pink);
+    color: var(--grey);
+}
+
+
+.card-icon-wrap {
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+.card-icon__row:not(:last-child) {
+    border-bottom: 1px solid var(--grey);
+}
+
+.card-icon {
+    justify-content: center;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    padding: 70px;
+}
+
+.card-icon:not(:last-child) {
+    border-right: 1px solid var(--grey);
+}
+
+.card-icon__img {
+    max-width: 149px;
+    width: 100%;
+}
+
+.section-second {
+    padding: 80px 0 100px;
+    background-color: var(--grey);
+}
+
+/*footer*/
+/*top*/
+.footer__top {
+    padding: 60px 0 60px;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--grey);
+}
+
+.footer__top-wrap {
+    gap: 30px;
+}
+
+.footer__top-col {
+    width: calc(25% - 30px);
+    min-width: 100px;
+}
+
+.footer__top-title {
+    padding-bottom: 55px;
+    border-bottom: 1px solid var(--grey);
+}
+
+.footer__top-nav {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.txt--grey {
+    font-weight: 400;
+    font-size: var(--fs-ft);
+    line-height: 28px;
+}
+
+.link-ft {
+    color: var(--grey-82);
+}
+
+/*middle*/
+
+.footer__middle {
+    padding: 36px 0 37px;
+}
+
+.footer__middle-icons {
+    padding-right: 37px;
+    gap: 28px;
+}
+
+.circle-icon-link {
+    border-radius: 50%;
+    border: 2px solid var(--pink);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__middle-call {
+    gap: 40px;
+}
+
+/* bottom */
+.footer__bottom {
+    padding: 21px 0;
+    background-color: var(--grey);
+}
+
+.txt-ft {
+    font-family: 400;
+    line-height: 14.06px;
+    font-size: var(--fs-ft);
+    color: var(--grey-82);
+}
